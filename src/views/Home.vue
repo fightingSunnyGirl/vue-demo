@@ -1,18 +1,15 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <!-- <img alt="Vue logo" src="../assets/img/logo.png" /> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
+    <p>数据回显{{params.status}}</p>
+    <p>computed {{pageCount}}</p>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-
-@Component({
-  components: {
-    HelloWorld
-  }
-})
-export default class Home extends Vue {}
+  import { Component} from "vue-property-decorator";
+  //引入js
+  import home from '@/assets/js/home/index';
+  export default class Home extends Component(home) {} 
 </script>
