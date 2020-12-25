@@ -1,7 +1,7 @@
 // 共有8个装饰器 @Emit @Inject Mixins @Model @Prop @Provide @Watch @Component(from vue-class-component)
 import { Component, Vue,Watch } from "vue-property-decorator";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-import {Params} from './interface'
+import {Params} from './config'
 @Component({
   name:'Home',
   components: {
