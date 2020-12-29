@@ -23,7 +23,8 @@ export default class Home extends Vue {
   test():void{
     console.log(111)
     this.params.status = 'order'
-  }
+    
+  }  
 
   // computed
   get pageCount(){
